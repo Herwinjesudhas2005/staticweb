@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Request Form</h2>
+    <form id="requestForm">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="request">Request Details:</label>
+        <textarea id="request" name="request" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Submit Request</button>
+    </form>
+    <div id="successMessage" class="hidden">Request submitted successfully!</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
